@@ -1,0 +1,635 @@
+[
+    {
+        "id": "55c87d3dd1cc2c5e",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "serial_port",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM12",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "false",
+        "responsetimeout": ""
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "localhost",
+        "broker": "broker.hivemq.com",
+        "port": " 1883",
+        "tls": "",
+        "clientid": "ana1",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "Posture Dashboard",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Posture Monitoring",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "4becb516dcd0d348",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fbae8a7b1bd93b60",
+        "type": "ui_group",
+        "name": "Current Status",
+        "tab": "dashboard_tab",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "ab6ec021f0461ca6",
+        "type": "ui_group",
+        "name": "Analytics & Trends",
+        "tab": "dashboard_tab",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "f5605de0ad0897a8",
+        "type": "ui_group",
+        "name": "System Information",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "d2d5721fc03fc9d6",
+        "type": "ui_group",
+        "name": "Current Status",
+        "tab": "dashboard_tab",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "896d44b05938ca11",
+        "type": "ui_group",
+        "name": "Analytics & Trends",
+        "tab": "dashboard_tab",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "8ec61b3b9fae6f6c",
+        "type": "ui_group",
+        "name": "System Information",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "2c12371925c7ae07",
+        "type": "ui_group",
+        "name": "Current Status",
+        "tab": "dashboard_tab",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "6bcd445c84994164",
+        "type": "ui_group",
+        "name": "Analytics & Trends",
+        "tab": "dashboard_tab",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "e2bf4f70cd14a742",
+        "type": "ui_group",
+        "name": "System Information",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "1fd1b8ed5107916a",
+        "type": "serial in",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "HC-05 Serial In",
+        "serial": "serial_port",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "21d38d8140d7d302"
+            ]
+        ]
+    },
+    {
+        "id": "21d38d8140d7d302",
+        "type": "function",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Format Posture + Color + Value",
+        "func": "// Check if payload exists\nif (msg.payload === null || msg.payload === undefined || msg.payload === \"\") {\n    return null; // Skip null messages\n}\n\n// Convert to string and trim\nvar data = msg.payload.toString().trim();\n\n// Check if it's a valid posture string\nif (data !== \"good_posture\" && data !== \"slouching\" && \n    data !== \"lean_left\" && data !== \"lean_right\") {\n    return null; // Skip invalid data\n}\n\nmsg.payload = data;\nmsg.topic = \"posture/status\";\n\n// Map AI model labels\nif(msg.payload === \"slouching\"){\n    msg.color = \"red\";\n    msg.text = \"⚠ Bad posture detected!\";\n    msg.value = 0;\n} else if(msg.payload === \"lean_left\" || msg.payload === \"lean_right\"){\n    msg.color = \"orange\";\n    msg.text = \"⚠ Adjust posture\";\n    msg.value = 0.5;\n} else if(msg.payload === \"good_posture\"){\n    msg.color = \"green\";\n    msg.text = \"Good posture 🙂\";\n    msg.value = 1;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "a42de073f32665c4",
+                "71a833e73f37a952",
+                "bbefb4764a8549c6",
+                "a609e552925c0e7b",
+                "71b13834ddcf980e",
+                "57827586b30f882f",
+                "929ef201590f753c",
+                "c9d1b11de2df39c8"
+            ]
+        ]
+    },
+    {
+        "id": "a42de073f32665c4",
+        "type": "switch",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Detect Bad Posture",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "slouching",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "lean_left",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "lean_right",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 930,
+        "y": 320,
+        "wires": [
+            [
+                "2028c2b2acef2d07"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "71a833e73f37a952",
+        "type": "ui_template",
+        "z": "55c87d3dd1cc2c5e",
+        "group": "dashboard_group",
+        "name": "Posture Text + Color",
+        "width": "",
+        "height": "",
+        "format": "",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "deda1e903308502b",
+        "type": "ui_chart",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Posture History",
+        "group": "dashboard_group",
+        "order": 1,
+        "width": 12,
+        "height": 6,
+        "label": "Posture Trend",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": 0,
+        "ymax": 1,
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#00ff00",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1140,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2028c2b2acef2d07",
+        "type": "ui_toast",
+        "z": "55c87d3dd1cc2c5e",
+        "position": "top right",
+        "displayTime": "3000",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Bad Posture Notification",
+        "x": 1330,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bbefb4764a8549c6",
+        "type": "ui_gauge",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Posture Gauge",
+        "group": "dashboard_group",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Posture Level",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#ff0000",
+            "#ffa500",
+            "#00ff00"
+        ],
+        "seg1": "0.4",
+        "seg2": "0.7",
+        "diff": false,
+        "className": "",
+        "x": 940,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a609e552925c0e7b",
+        "type": "function",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Slouch Percentage (rolling 60)",
+        "func": "// Keep rolling array of last 60 samples\ncontext.data = context.data || [];\ncontext.data.push(msg.value);\nif(context.data.length > 60){ context.data.shift(); }\n\nlet slouchCount = context.data.filter(v=>v===0).length;\nmsg.payload = (slouchCount/context.data.length)*100;\nmsg.topic = 'Slouch Percentage';\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 800,
+        "wires": [
+            [
+                "6b853384e7764427"
+            ]
+        ]
+    },
+    {
+        "id": "6b853384e7764427",
+        "type": "ui_chart",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Slouch Percentage",
+        "group": "dashboard_group",
+        "order": 3,
+        "width": 12,
+        "height": 4,
+        "label": "Slouching % (last 60 samples)",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": 0,
+        "ymax": 100,
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1330,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71b13834ddcf980e",
+        "type": "function",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Daily Trend per Hour",
+        "func": "// Daily Trend per Hour - FIXED\nif (msg.value === undefined || msg.value === null) {\n    return null; // Skip if no numeric value\n}\n\n// Initialize or get hourly data from context\nlet hourlyData = context.get('hourlyData') || {};\nlet currentHour = new Date().getHours();\n\n// Initialize current hour array if needed\nif (!hourlyData[currentHour]) {\n    hourlyData[currentHour] = [];\n}\n\n// Add the current posture value (0, 0.5, or 1)\nhourlyData[currentHour].push(msg.value);\n\n// Keep only last 50 samples per hour to prevent memory issues\nif (hourlyData[currentHour].length > 50) {\n    hourlyData[currentHour] = hourlyData[currentHour].slice(-50);\n}\n\n// Save updated data back to context\ncontext.set('hourlyData', hourlyData);\n\n// Build chart data for last 12 hours\nlet chartData = [];\nlet chartLabels = [];\n\nfor (let i = 0; i < 12; i++) {\n    let hour = (currentHour - i + 24) % 24; // Handle wrap-around\n    \n    if (hourlyData[hour] && hourlyData[hour].length > 0) {\n        // Calculate average for this hour\n        let sum = hourlyData[hour].reduce((a, b) => a + b, 0);\n        let average = sum / hourlyData[hour].length;\n        chartData.unshift(average); // Add to beginning for chronological order\n    } else {\n        chartData.unshift(null); // No data for this hour\n    }\n    \n    chartLabels.unshift(hour + \":00\");\n}\n\n// Prepare message for chart\nmsg.payload = chartData;\nmsg.labels = chartLabels;\nmsg.topic = \"Daily Posture Trend\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 700,
+        "wires": [
+            [
+                "2f3d653a8ed2576c"
+            ]
+        ]
+    },
+    {
+        "id": "2f3d653a8ed2576c",
+        "type": "ui_chart",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "Daily Trend",
+        "group": "dashboard_group",
+        "order": 4,
+        "width": 12,
+        "height": 4,
+        "label": "Daily Trend per Hour",
+        "chartType": "line",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": 0,
+        "ymax": 1,
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#0000ff",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57827586b30f882f",
+        "type": "mqtt out",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "",
+        "topic": "posture/status",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt_broker",
+        "x": 1060,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "929ef201590f753c",
+        "type": "debug",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c9d1b11de2df39c8",
+        "type": "function",
+        "z": "55c87d3dd1cc2c5e",
+        "name": "function 1",
+        "func": "// Convert text posture to numeric score for chart\nif (msg.payload === \"good_posture\") {\n    msg.payload = 1;\n} else if (msg.payload === \"lean_left\" || msg.payload === \"lean_right\") {\n    msg.payload = 0.5;\n} else if (msg.payload === \"slouching\") {\n    msg.payload = 0;\n} else {\n    return null;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 420,
+        "wires": [
+            [
+                "deda1e903308502b"
+            ]
+        ]
+    },
+    {
+        "id": "b70afd65a13dbb43",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-serialport": "2.0.3",
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
