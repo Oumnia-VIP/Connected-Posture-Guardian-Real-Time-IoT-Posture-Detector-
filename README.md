@@ -12,12 +12,12 @@ Connected Posture Guardian is a real-time IoT system designed to help students m
 - $0 budget friendly - built with affordable components
 
 # Features
--Real-Time Posture Detection : Continuous monitoring with sub-2-second latency
--AI-Powered Classification : Random Forest model trained on 800+ posture samples
--Multi-Platform Interface : Web dashboard (Node-RED) and mobile app (MQTT)
--Affordable Hardware : Arduino-based system accessible to students
--Intuitive Alerts : Color-coded feedback (green/yellow/red) and non-intrusive notifications
--Historical Analytics : Track posture trends and study habits over time
+- Real-Time Posture Detection : Continuous monitoring with sub-2-second latency
+- AI-Powered Classification : Random Forest model trained on 800+ posture samples
+- Multi-Platform Interface : Web dashboard (Node-RED) and mobile app (MQTT)
+- Affordable Hardware : Arduino-based system accessible to students
+- Intuitive Alerts : Color-coded feedback (green/yellow/red) and non-intrusive notifications
+- Historical Analytics : Track posture trends and study habits over time
 
 # Problem Statement
 University students face significant challenges:
