@@ -45,27 +45,43 @@ Software Stack
 The system detects four posture states:
 
 Good Posture:
+
 X: -0.98 to -1.00 (strong negative)
+
 Y: -0.02 to +0.01 (near zero)
+
 Z: 0.18 to 0.24 (low - sensor horizontal)
+
 Pattern: Strong negative X, low Z
 
 Slouching:
+
 X: -0.21 to -0.23 (moderate negative)
+
 Y: 0.00 to +0.01 (near zero)
+
 Z: 0.91 to 0.93 (high - sensor vertical)
+
 Pattern: Moderate negative X, high Z
 
 Lean Right:
+
 X: -0.62 to -0.83 (moderate negative)
+
 Y: -0.37 to -0.60 (strong negative)
+
 Z: 0.33 to 0.62 (medium)
+
 Pattern: Strong negative Y
 
 Lean Left:
+
 X: -0.62 to -0.81 (moderate negative)
+
 Y: +0.49 to +0.73 (strong positive)
+
 Z: 0.24 to 0.36 (low-medium)
+
 Pattern: Strong positive Y
 
 
